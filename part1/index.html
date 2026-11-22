@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" style="color-scheme: dark;"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Engy Mohamed El Feky | Video Editor &amp; Motion Designer</title>
+<style>
+:root{--bg:#f2f9fb;--card:#fff;--text:#0d2230;--muted:#5b7482;--accent:#0e8f9b;--accent2:#7c5cff;--on:#fff;--line:#d5e6ec;--glow1:rgba(45,190,200,.24);--glow2:rgba(124,92,255,.15);--glow3:rgba(255,110,100,.12);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#06080d;--card:#0f1622;--text:#eaf4f7;--muted:#8fa6b3;--accent:#3dd6c8;--accent2:#8b7bff;--on:#04201d;--line:#1d2a3a;--glow1:rgba(30,200,190,.22);--glow2:rgba(124,92,255,.24);--glow3:rgba(255,90,90,.12);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#06080d;--card:#0f1622;--text:#eaf4f7;--muted:#8fa6b3;--accent:#3dd6c8;--accent2:#8b7bff;--on:#04201d;--line:#1d2a3a;--glow1:rgba(30,200,190,.22);--glow2:rgba(124,92,255,.24);--glow3:rgba(255,90,90,.12);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;background:radial-gradient(40% 35% at 20% 15%,var(--glow1),transparent 70%),radial-gradient(35% 30% at 85% 25%,var(--glow2),transparent 70%),radial-gradient(45% 40% at 60% 90%,var(--glow3),transparent 70%);animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(4%,3%,0) scale(1.08)}}
+@media (prefers-reduced-motion:reduce){body::before{animation:none}}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+header{padding:56px 0 36px;text-align:center}
+.role{color:var(--accent);font-weight:600;letter-spacing:.5px;font-size:.95rem}
+h1{font-size:2rem;margin:.3rem 0;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.bio{color:var(--muted);max-width:560px;margin:0 auto 22px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--on);text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:600;border:0;font:inherit;font-weight:600;cursor:pointer}
+nav{display:flex;gap:8px;overflow-x:auto;padding:10px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav a{white-space:nowrap;color:var(--text);text-decoration:none;border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.9rem}
+section{padding:36px 0 8px}
+h2{margin:0 0 4px;font-size:1.4rem}
+.sub{color:var(--muted);font-size:.85rem;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative}
+.media{aspect-ratio:16/9;background:var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem}
+.media iframe,.media img{width:100%;height:100%;border:0;object-fit:cover}
+.card h3{margin:0;padding:12px 14px 2px;font-size:1rem}
+.card p{margin:0;padding:0 14px 14px;color:var(--muted);font-size:.85rem}
+.del{position:absolute;top:8px;left:8px;background:#d92d4b;color:#fff;border:0;border-radius:8px;padding:4px 10px;font:inherit;font-size:.8rem;cursor:pointer}
+.band{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin:8px 0 24px;text-align:center}
+.band h2{margin:0 0 4px}
+.band .media{border-radius:12px;margin-top:12px;aspect-ratio:auto;background:#000;min-height:120px}
+.band video{display:block;max-width:100%;max-height:75vh;margin:0 auto;border-radius:12px}
+.credit{display:inline-block;margin-top:12px;font-size:.85rem;color:var(--muted)}
+#podcast .card{max-width:380px;margin:0 auto}
+#podcast-media{aspect-ratio:9/16;background:#000}
+#podcast-media video{width:100%;height:100%;display:block}
+.poster{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-decoration:none;color:var(--on);background:linear-gradient(160deg,var(--accent),var(--accent2));font-weight:600}
+.poster .play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+footer{text-align:center;padding:48px 0 40px;color:var(--muted)}
+footer .btn{margin:6px 4px}
+#admin .fab{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:18px;z-index:20;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+#admin .ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:30;display:none;align-items:center;justify-content:center;padding:16px}
+#admin .ov.on{display:flex}
+#admin .box{background:var(--card);color:var(--text);border-radius:16px;padding:20px;width:100%;max-width:420px;max-height:90vh;overflow:auto}
+#admin label{display:block;font-size:.85rem;color:var(--muted);margin:10px 0 4px}
+#admin input,#admin select{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+#admin .row{display:flex;gap:8px;margin-top:16px}
+#admin .msg{font-size:.85rem;margin-top:10px;color:var(--accent)}
+</style>
+<style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style><style>artifact-sync,artifact-local{display:contents}</style></head>
+<body>
+<div class="wrap">
+<header>
+  <div class="role">Video Editor &amp; Motion Designer</div>
+  <h1>Engy Mohamed El Feky</h1>
+  <p class="bio">مونتير وموشن ديزاينر، باعمل فيديوهات AI وموشن جرافيك وتحريك شخصيات 3D. بحوّل الفكرة لفيديو بيشد العين ويوصل الرسالة.</p>
+  <a class="btn" href="#contact">تواصل معايا</a>
+</header>
+<div class="band" id="reel" data-src="videos/76ff5d4756ff717ea9db966157c5c463.mp4">
+  <h2>ملخص شغلي</h2>
+  <div class="sub">كل أنواع شغلي في فيديو واحد</div>
+  <div class="media" id="reel-media"></div>
+</div>
+<nav>
+  <a href="#editing">مونتاج</a><a href="#ai">AI</a><a href="#motion">موشن جرافيك</a><a href="#podcast">بودكاست</a>
+</nav>
+<main id="main"></main>
+<section id="podcast">
+  <h2>بودكاست</h2>
+  <div class="sub">Podcast</div>
+  <div class="card">
+    <div class="media" id="podcast-media"><video src="videos/a290470f951a28df56f55d51b6fcffd4.mp4" controls="" playsinline="" preload="metadata"></video></div>
+    <h3>Fero Talk | فيرو توك</h3>
+    <p>بودكاست كوميدي بيبسّط أخبار التسويق والذكاء الاصطناعي، بطله Fero شخصية 3D. السيناريو والمونتاج وتحريك الشخصية وضبط صوتها وشكلها: Engy Mohamed El Feky. منشور على قناة 4A Marketing Agency.</p>
+    <p><a class="btn" id="podcast-link" href="https://youtube.com/shorts/gitptF6FiSk" target="_blank" rel="noopener">شوف الحلقة على YouTube</a></p>
+  </div>
+</section>
+<footer id="contact">
+  <h2>خلينا نشتغل سوا</h2>
+  <p>ابعتلي على واتساب وهنتفق على التفاصيل.</p>
+  <a class="btn" href="https://wa.me/201010983226">واتساب <span dir="ltr">01010983226</span></a>
+  <a class="btn" href="https://wa.me/201507316774">واتساب <span dir="ltr">01507316774</span></a>
+</footer>
+</div>
+<script type="application/json" id="data">[{"id":"editing","title":"مونتاج","en":"Video Editing","works":[{"title":"مطعم روح","desc":"فيديو لمطعم \"روح\" 🍽️✨ حاولت في المونتاج أخرج التجربة بإيقاع حيوي، انتقالات ناعمة، وتناغم بصري يبرز تفاصيل المكان والأكل بشكل جذاب وسريع","video":"videos/67cc28122b0df3de285e063bf082ee88.mp4"},{"title":"GYM TOLDO","desc":"لما صور ثابتة تتحول لفيديو جيم مليان حركة وطاقة! 🎮✨ في المشروع ده اشتغلت على تحريك صور حقيقية وإخراجها بشكل يخلي المشهد نابض بالحياة بإيقاع واضح وتفاصيل جذابة","video":"videos/08d71c858d4b021660c137dc45269b36.mp4"}]},{"id":"ai","title":"AI Videos","en":"AI-generated video","works":[{"title":"Eman Salon","desc":"عندما تلتقي تقنيات الذكاء الاصطناعي مع الرؤية الإبداعية لصناعة محتوى إعلاني مختلف! ✨🎥","video":"videos/e19250aeda413bf5e80fcbed4ae36c78.mp4"},{"title":"4A Marketing Agency","desc":"فيديو دعائي بالذكاء الاصطناعي لوكالة تسويق يجمع بين الإبداع البصري وتقنيات توليد الفيديو الحديثة 🎬✨","video":"videos/0dd763cff886306324b7b0870915f290.mp4"},{"title":"My Creative Journey","desc":"مش مجرد مونتاج أو تحريك... دي طريقتي في حكي القصص بالصورة والحركة والذكاء الاصطناعي اتعرفوا أكتر على شغفي وأسلوب شغلي في الفيديو ده🪄🧡","video":"videos/255b008fde3f64864c25cf75051b3270.mp4"},{"title":"عطر جديد","desc":"عطر مش موجود.. بس الإعلان موجود 👀🌌 ده شغلي فكرة، سكريبت، تصميم، توليد بالـ AI ومونتاج تحبي أعمل لمنتجك الحقيقي إعلان بنفس الجودة او فكرة جديدة","video":"videos/2f64528306e48f3559cf76e9905c8f1c.mp4"},{"title":"قاع الهامور","desc":"رحلة سريعة لقاع الهامور بس بلمسة مختلفة 👀🌊 ده شغلي بالكامل: فكرة، كتابة برومبت، توليد مشاهد بالـ AI ومونتاج. حابب نعمل فكرة إبداعية تلفت الانتباه لبراندك بنفس الروح دي؟ ✨","video":"videos/259e03a1a37e2582828fb4a4a913c522.mp4"}]},{"id":"motion","title":"موشن جرافيك","en":"Motion Graphics","works":[{"title":"Tolda | أنيميشن لوجو جيم","desc":"غوريلا قوية بتتحرك وتبرز عضلاتها خلف اسم البراند بخط معدني، على خلفية سودا تعكس القوة والحماس.","video":"videos/461b9386a42e3d7dbb6cf004fb9494f7.mp4"},{"title":"RAVI Wellness Center | أنيميشن لوجو","desc":"الشعار بيتجمّع من حلقات بتدرّجات التركواز والبنفسجي، وبعدين يظهر الاسم والشعار النصّي بتأثير ثلاثي الأبعاد على خلفية فاتحة.","video":"videos/00f1756d59f98e93a50e0a55b2c36635.mp4"},{"title":"دار عناية | أنيميشن لوجو","desc":"قلب بيترسم بخط انسيابي، وإيدين بتحتضنه بدرجات الأخضر الهادية، لحد ما يكتمل الشعار بإحساس دافي بيعبّر عن الرعاية.","video":"videos/36259f8ad8311e041e52086f9b3c4c2e.mp4"},{"title":"SALON","desc":"","video":"videos/f2b1c05b2193780b3a49ed115e2e169e.mp4"}]}]</script>
+<script>
+var SECTIONS = JSON.parse(document.getElementById("data").textContent);
+var main = document.getElementById("main");
+var isOwner = false;
+
+function el(tag, cls, txt){ var e = document.createElement(tag); if (cls) e.className = cls; if (txt) e.textContent = txt; return e; }
+
+function render(){
+  main.textContent = "";
+  SECTIONS.forEach(function(s, si){
+    var sec = el("section"); sec.id = s.id;
+    sec.appendChild(el("h2", "", s.title));
+    sec.appendChild(el("div", "sub", s.en));
+    var grid = el("div", "grid");
+    s.works.forEach(function(w, wi){
+      var c = el("div", "card"), m = el("div", "media");
+      if (w.video) {
+        m.appendChild(mkVideo(w.video));
+      } else if (w.youtube) {
+        var f = document.createElement("iframe");
+        f.src = "https://www.youtube.com/embed/" + w.youtube;
+        f.allowFullscreen = true; f.loading = "lazy"; m.appendChild(f);
+      } else if (w.image) {
+        var i = document.createElement("img"); i.src = w.image; i.alt = w.title; m.appendChild(i);
+      } else { m.textContent = "قريبًا"; }
+      c.appendChild(m); c.appendChild(el("h3", "", w.title)); c.appendChild(el("p", "", w.desc));
+      if (isOwner) {
+        var d = el("button", "del", "حذف");
+        d.onclick = function(){ if (confirm("تحذف العمل ده؟")) { s.works.splice(wi, 1); save(); } };
+        c.appendChild(d);
+      }
+      grid.appendChild(c);
+    });
+    sec.appendChild(grid); main.appendChild(sec);
+  });
+}
+function mkVideo(src){ var v = document.createElement("video"); v.src = src; v.controls = true; v.playsInline = true; v.preload = "metadata"; return v; }
+function renderReel(){
+  var box = document.getElementById("reel-media"), src = document.getElementById("reel").getAttribute("data-src");
+  box.textContent = "";
+  if (src) { box.appendChild(mkVideo(src)); } else { box.textContent = "الريل هيتحط هنا"; }
+}
+render(); renderReel();
+
+function ytId(v){
+  v = (v || "").trim();
+  var m = v.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
+  if (m) return m[1];
+  return /^[A-Za-z0-9_-]{11}$/.test(v) ? v : "";
+}
+
+var artifactApi = null;
+function setMsg(t){ var m = document.querySelector("#admin .msg"); if (m) m.textContent = t; }
+
+async function save(){
+  try {
+    var c = document.documentElement.cloneNode(true);
+    c.querySelector("#main").textContent = "";
+    var adm = c.querySelector("#admin"); if (adm) adm.remove();
+    var ru = c.querySelector("#reel-up"); if (ru) ru.remove();
+    c.querySelector("#reel-media").textContent = "";
+    c.querySelector("#data").textContent = JSON.stringify(SECTIONS).replace(/</g, "\\u003c");
+    await artifactApi.publish("<!DOCTYPE html>\n" + c.outerHTML);
+  } catch (e) {
+    var code = e && e.code ? e.code : "";
+    if (code === "conflict") return;
+    setMsg(code === "not_writer" || code === "not_granted" ? "مفيش صلاحية تعديل على الصفحة دي." : "حصلت مشكلة في الحفظ، جرّب تاني.");
+    alert("مقدرتش أحفظ التعديل. جرّب تاني.");
+  }
+}
+
+async function uploadFile(file){
+  if (file.size > 20 * 1024 * 1024) { setMsg("الملف أكبر من 20 ميجا. صغّره وجرّب تاني."); return null; }
+  try {
+    var assets = await claude.use("assets");
+    if (!assets) { setMsg("رفع الملفات مش متاح دلوقتي."); return null; }
+    setMsg("بنرفع الملف...");
+    var r = await assets.upload(file);
+    return {url: r.url, isVideo: /^video\//.test(r.contentType || file.type)};
+  } catch (e) { setMsg("الرفع فشل، جرّب تاني."); return null; }
+}
+
+function buildReelBtn(){
+  var reel = document.getElementById("reel");
+  var wrap = el("div"); wrap.id = "reel-up";
+  var b = el("button", "btn", "ارفع / غيّر الريل"); b.style.marginTop = "12px";
+  var inp = document.createElement("input"); inp.type = "file"; inp.accept = "video/*"; inp.style.display = "none";
+  b.onclick = function(){ inp.click(); };
+  inp.onchange = async function(){
+    if (!inp.files[0]) return;
+    b.disabled = true; b.textContent = "بنرفع...";
+    var up = await uploadFile(inp.files[0]);
+    if (!up) { alert("الرفع فشل أو الملف أكبر من 20 ميجا."); b.disabled = false; b.textContent = "ارفع / غيّر الريل"; return; }
+    reel.setAttribute("data-src", up.url); renderReel(); await save();
+  };
+  wrap.appendChild(b); wrap.appendChild(inp); reel.appendChild(wrap);
+}
+
+function buildAdmin(){
+  var a = el("div"); a.id = "admin";
+  var fab = el("button", "btn fab", "+ إضافة شغل");
+  var ov = el("div", "ov"), box = el("div", "box");
+  box.appendChild(el("h2", "", "إضافة شغل جديد"));
+  box.appendChild(el("label", "", "القسم"));
+  var sel = document.createElement("select");
+  SECTIONS.forEach(function(s, i){ var o = el("option", "", s.title); o.value = i; sel.appendChild(o); });
+  box.appendChild(sel);
+  box.appendChild(el("label", "", "اسم المشروع"));
+  var t = document.createElement("input"); box.appendChild(t);
+  box.appendChild(el("label", "", "وصف قصير"));
+  var d = document.createElement("input"); box.appendChild(d);
+  box.appendChild(el("label", "", "ملف الفيديو (أو صورة) - حتى 20 ميجا"));
+  var fl = document.createElement("input"); fl.type = "file"; fl.accept = "video/*,image/*"; box.appendChild(fl);
+  box.appendChild(el("div", "msg"));
+  var row = el("div", "row"), ok = el("button", "btn", "إضافة ونشر"), no = el("button", "btn", "إلغاء");
+  no.style.background = "var(--line)"; no.style.color = "var(--text)";
+  row.appendChild(ok); row.appendChild(no); box.appendChild(row);
+  ov.appendChild(box); a.appendChild(fab); a.appendChild(ov); document.body.appendChild(a);
+  fab.onclick = function(){ ov.classList.add("on"); };
+  no.onclick = function(){ ov.classList.remove("on"); };
+  ok.onclick = async function(){
+    var file = fl.files[0];
+    if (!t.value.trim()) { setMsg("اكتب اسم المشروع."); return; }
+    if (!file) { setMsg("اختار ملف فيديو أو صورة."); return; }
+    ok.disabled = true;
+    var up = await uploadFile(file);
+    if (!up) { ok.disabled = false; return; }
+    var s = SECTIONS[+sel.value];
+    var w = {title: t.value.trim(), desc: d.value.trim()};
+    if (up.isVideo) w.video = up.url; else w.image = up.url;
+    var empty = s.works.findIndex(function(x){ return !x.youtube && !x.image && !x.video; });
+    if (empty >= 0) s.works[empty] = w; else s.works.push(w);
+    setMsg("بنحفظ...");
+    save();
+  };
+}
+
+(async function(){
+  try {
+    if (!window.claude) return;
+    var u = await claude.use("user");
+    if (!u || !u.isOwner()) return;
+    artifactApi = await claude.use("artifact");
+    if (!artifactApi) return;
+    isOwner = true; buildAdmin(); render(); buildReelBtn();
+  } catch (e) {}
+})();
+</script>
+
+
+</body></html>
